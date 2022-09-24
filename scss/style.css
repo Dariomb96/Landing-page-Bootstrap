@@ -1,3 +1,6 @@
+.overflow-x-hidden{
+    overflow-x: hidden !important;
+}
 .index-intro {
     background-image: 
         linear-gradient(0deg, rgba(0, 0, 0, 0.5),
@@ -8,7 +11,7 @@
 }
 
 .margin-custom {
-    margin-top: 10%;
+    margin-top: 10% !important;
     margin-right: 5%;
 }
 
@@ -25,4 +28,39 @@
 }
 .puntuado{
     border-bottom: 1px dotted #000;
+}
+.custom-color{
+    background-color: #98cc3c !important;
+    border-color: #98cc3c !important;;
+}
+.bg-custom{
+    background-color: #1c4c6c;
+}
+
+@media (max-width: 575px) {
+    .margin-custom{
+        margin-top: 40%;
+    }
+    .header {
+        position: relative;
+        top: 0;
+        width: 100%
+      }
+}
+@media (min-width: 576px) and (max-width: 990px){
+    .margin-custom{
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+    .header {
+        position: relative;
+        top: 0;
+        width: 100%
+      }
+}
+@media (min-width: 991px) and (max-width: 1900px) {
+    .margin-custom{
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
 }
