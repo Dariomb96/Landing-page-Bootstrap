@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./scss/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark container" aria-label="Second navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark" href="#">Codo a Codo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
+                aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Desactivado</a>
+                    </li>
+                </ul>
+                <form class="me-2" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <button class="btn btn-outline-success">Buscar</button>
+            </div>
+        </div>
+    </nav>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="row col">
+                    <div class="card shadow-sm p-0">
+                        <img src="https://blog.ida.cl/wp-content/uploads/sites/5/2012/05/encabezado1.jpg" alt="HTML5">
+                        <div class="card-body">
+                            <h4>titulo 1</h4>
+                            <p class="card-text">Contenido de Card</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Ultima actualizacion 1</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col">
+                    <div class="card shadow-sm p-0">
+                        <img src="https://colorlib.com/cdn-cgi/image/width=1400,height=802,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/creative-css3-tutorials.jpg"
+                            alt="CSS3">
+                        <div class="card-body">
+                            <h4>titulo 2</h4>
+                            <p class="card-text">Contenido de Card</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Ultima actualizacion 1</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col">
+                    <div class="card shadow-sm p-0">
+                        <img src="https://serv3.raiolanetworks.es/blog/wp-content/uploads/bootstrap-social-share.png"
+                            height="100%" alt="Bootstrap">
+                        <div class="card-body">
+                            <h4>titulo 3</h4>
+                            <p class="card-text">Contenido de Card</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Ultima actualizacion 1</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <form class="container">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca comparta su email.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Verificar</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
