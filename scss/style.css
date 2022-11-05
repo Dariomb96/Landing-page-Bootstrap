@@ -36,7 +36,9 @@
 .bg-custom{
     background-color: #1c4c6c;
 }
-
+.bg-lightblue{
+    background-color: rgba(120, 190, 236, 0.507)
+}
 @media (max-width: 575px) {
     .margin-custom{
         margin-top: 40%;
