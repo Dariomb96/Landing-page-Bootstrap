@@ -75,25 +75,25 @@
         <div class="row justify-content-center mt-3">
             <div class="col-lg-3 col-sm-6">
                 <p>Cantidad</p>
-                <input type="number" class="form-control" placeholder="Cantidad" aria-label="Nombre">
+                <input type="number" min="1" max="10" id="cTickets" class="form-control" placeholder="Cantidad" aria-label="Nombre">
             </div>
             <div class="col-lg-3 col-sm-6">
                 <p>Categoria</p>
-                <select class="form-select" aria-label="Default select example">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Trainee</option>
-                    <option value="3">Junior</option>
+                <select id="opcionesDescuento" onchange="/*calcularTotal()*/" class="form-select" aria-label="Default select example">
+                    <option id="estudiante" value="0.20">Estudiante</option>
+                    <option id="trainee" value="0.50">Trainee</option>
+                    <option id="junior" value="0.85">Junior</option>
                 </select>
             </div>
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-lg-6 col-sm-12">
-                <p class="bg-lightblue p-3 rounded-1 " >Total a pagar: $</p>
+                <p id="totalTicket" class="bg-lightblue p-3 rounded-1" ></p>
             </div>
         </div>
         <div class="row justify-content-center p-4">
-        <input type="submit" class="btn btn-success custom-color fs-4 col-3 me-2" value="Borrar">
-        <input type="submit" class="btn btn-success custom-color fs-4 col-3" value="Resumen">
+        <input type="submit" id="btnBorrar" class="btn btn-success custom-color fs-4 col-3 me-2" value="Borrar">
+        <input type="submit" id="btnResumen" class="btn btn-success custom-color fs-4 col-3" value="Resumen">
     </div>
     </section>
     <footer class="footer fixed-bottom py-4 bg-custom text-light">
@@ -109,6 +109,7 @@
         </ul>
     </footer>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="tickets.js"></script>
 </body>
 
 </html>
