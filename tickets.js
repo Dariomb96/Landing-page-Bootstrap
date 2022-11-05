@@ -13,4 +13,6 @@ function calcularTotal() {
 }
 
 resumen.addEventListener('click', calcularTotal)
-//tickets.addEventListener("change", calcularTotal);
+/*  tanto aca como en el elemento select de tickets.html tenia un listener para actualizar y mostrar el precio con cada cambio,
+    pero a pedido de la consigna lo comente para que solo muestre el precio a travez del boton resumen.
+    tickets.addEventListener("change", calcularTotal); */
